@@ -1,0 +1,32 @@
+{
+  "name": "my-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bunx --bun vite --port 3000",
+    "build": "bunx --bun vite build && tsc",
+    "serve": "bunx --bun vite preview",
+    "test": "bunx --bun vitest run"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.114.27",
+    "@tanstack/react-router-devtools": "^1.114.27",
+    "@tanstack/router-plugin": "^1.114.27",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "happy-dom": "^17.4.4",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.2",
+    "vitest": "^3.0.9",
+    "vite-tsconfig-paths": "^5.1.4",
+    "web-vitals": "^4.2.4",
+    "oxlint": "^0.16.3"
+  }
+}
