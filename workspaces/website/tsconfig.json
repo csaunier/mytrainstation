@@ -1,6 +1,7 @@
 {
   "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ES2022",
     "jsx": "react-jsx",
     "module": "ESNext",
@@ -20,12 +21,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
     "paths": {
-        "@/*": ["./src/*"],
-        "@components/*": ["./src/components/*"],
-        "@hooks/*": ["./src/hooks/*"],
-        "@routes/*": ["./src/routes/*"],
+      "@ui/*": ["../../node_modules/@mytrainstation/ui/src/*"],
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@routes/*": ["./src/routes/*"]
     }
   }
 }

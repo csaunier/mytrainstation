@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "exports": {
-    "./Button": "./src/Button/Button.tsx"
-  },
   "devDependencies": {
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.2",

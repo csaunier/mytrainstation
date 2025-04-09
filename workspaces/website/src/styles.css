@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../../../node_modules/@mytrainstation/ui";
 
 /*
 palette :
@@ -9,7 +10,7 @@ palette :
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -21,9 +22,22 @@ body::before {
   position: absolute;
   inset: 0 0 212px 0;
   height: 212px;
-  background-image:
-    url("./assets/logo.svg"),
-    linear-gradient(to right top, #ff9966, #ff8f63, #ff8461, #ff7960, #ff6e60, #fe6764, #fd5f68, #fc586c, #f95473, #f6517b, #f14f82, #ec4e89);
+  background-image: url("./assets/logo.svg"),
+    linear-gradient(
+      to right top,
+      #ff9966,
+      #ff8f63,
+      #ff8461,
+      #ff7960,
+      #ff6e60,
+      #fe6764,
+      #fd5f68,
+      #fc586c,
+      #f95473,
+      #f6517b,
+      #f14f82,
+      #ec4e89
+    );
   background-size: 300%, 100%;
   background-repeat: no-repeat;
   background-position: center center, top;
@@ -32,6 +46,5 @@ body::before {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
