@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "server": "(cd workspaces/server && bun dev)",
     "start": "(cd workspaces/website && bunx --bun vite --port 3000)",
     "build": "bunx --bun vite build && tsc",
     "serve": "bunx --bun vite preview",
