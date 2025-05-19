@@ -7,12 +7,22 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["dist", "build", "coverage", "*.log", "*.lock", ".git", ".idea", ".vscode", "*.gen.ts"]
+    "ignore": [
+      "dist",
+      "build",
+      "coverage",
+      "*.log",
+      "*.lock",
+      ".git",
+      ".idea",
+      ".vscode",
+      "*.gen.ts"
+    ]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 120,
+    "lineWidth": 100,
     "indentWidth": 2
   },
   "organizeImports": {
