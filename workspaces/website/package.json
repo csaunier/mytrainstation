@@ -12,6 +12,7 @@
     "@fontsource/lato": "^5.2.5",
     "@mytrainstation/ui": "workspace:*",
     "@tailwindcss/vite": "^4.1.5",
+    "@tanstack/react-query": "^5.76.1",
     "@tanstack/react-router": "^1.120.3",
     "@tanstack/react-router-devtools": "^1.120.3",
     "@tanstack/router-plugin": "^1.120.3",

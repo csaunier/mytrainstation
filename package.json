@@ -3,15 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "server": "(cd workspaces/server && bun dev)",
-    "start": "(cd workspaces/website && bunx --bun vite --port 3000)",
+    "start": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "(cd workspaces/server && bun dev)",
+    "dev:client": "(cd workspaces/website && bunx --bun vite)",
     "build": "bunx --bun vite build && tsc",
     "serve": "bunx --bun vite preview",
     "test": "bunx --bun vitest run"
   },
-  "workspaces": ["workspaces/ui", "workspaces/website"],
+  "workspaces": [
+    "workspaces/ui",
+    "workspaces/website",
+    "workspaces/server"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "lefhook": "^1.1.1"
+    "lefhook": "^1.1.1",
+    "concurrently": "^9.1.2"
   }
 }
